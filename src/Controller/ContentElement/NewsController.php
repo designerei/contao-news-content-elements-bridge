@@ -46,9 +46,12 @@ class NewsController extends AbstractContentElementController
             ];
         }
 
+        $configuration = [];
         foreach ($fields as $field) {
-            $template->set($field, $model->$field);
+            $configuration[$field] = $model->$field;
         }
+
+        $template->set('configuration', $configuration);
 
         return $template->getResponse();
     }

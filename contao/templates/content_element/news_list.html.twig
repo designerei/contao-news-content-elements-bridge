@@ -1,17 +1,5 @@
 {% extends '@Contao/content_element/_base.html.twig' %}
 
-{% set data = {
-    news_archives: news_archives,
-    news_readerModule: news_readerModule|default,
-    numberOfItems: numberOfItems|default,
-    news_featured: news_featured|default,
-    news_order: news_order|default,
-    skipFirst: skipFirst|default,
-    perPage: perPage|default,
-    customTpl: customTpl|default,
-    news_template: news_template|default,
-} %}
-
 {% block content %}
-    {{ frontend_module('newslist', data) }}
+    {{ frontend_module('newslist', configuration) }}
 {% endblock %}
