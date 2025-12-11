@@ -1,0 +1,14 @@
+{% extends '@Contao/content_element/_base.html.twig' %}
+
+{% set data = {
+    news_archives: news_archives,
+    news_keepCanonical: news_keepCanonical|default,
+    overviewPage: overviewPage|default,
+    customLabel: customLabel|default,
+    customTpl: customTpl|default,
+    news_template: news_template|default,
+} %}
+
+{% block content %}
+    {{ frontend_module('newsreader', data) }}
+{% endblock %}

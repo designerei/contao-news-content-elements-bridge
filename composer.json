@@ -1,0 +1,32 @@
+{
+  "name": "designerei/contao-news-content-elements-bridge",
+  "type": "contao-bundle",
+  "require": {
+    "php": "^8.2",
+    "contao/core-bundle": "^5.6",
+    "contao/news-bundle": "^5.6"
+  },
+  "license": "LGPL-3.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "designerei\\ContaoNewsContentElementBridgeBundle\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Hendrik Bengs",
+      "email": "hendrik@designerei-werbeagentur.de",
+      "homepage": "https://designerei-werbeagentur.de",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "contao-manager-plugin": "designerei\\ContaoNewsContentElementBridgeBundle\\ContaoManager\\Plugin"
+  },
+  "config": {
+    "allow-plugins": {
+      "contao-components/installer": true,
+      "php-http/discovery": true
+    }
+  }
+}
