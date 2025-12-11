@@ -29,5 +29,3 @@ composer require designerei/contao-news-content-elements-bridge
 ## Usage
 
 The provided content elements appear in the backend and behave exactly like their module counterparts, using the templates from the Contao News Bundle.
-
----
